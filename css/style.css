@@ -72,6 +72,8 @@ select:focus {
 textarea {
 }
 
+/* --- header --- */
+
 .ba-header {
   padding-top: 59px;
   position: absolute;
@@ -142,6 +144,8 @@ textarea {
   color: #723182;
 }
 
+/* --- hero section --- */
+
 .ba-hero {
   background: url(../img/hero-bg-right.png) no-repeat top right,
     url(../img/hero-bg-left.png) no-repeat center left;
@@ -149,7 +153,7 @@ textarea {
 }
 
 .ba-hero__inner {
-  min-height: 100vh;
+  min-height: 60vh;
   width: 55%;
   display: flex;
   flex-direction: column;
@@ -216,4 +220,50 @@ textarea {
 .ba-search__icon:hover,
 .ba-search__button:focus .ba-search__icon {
   fill: #723182;
+}
+
+/* --- resources --- */
+.ba-resources {
+  padding: 153px 0 150px;
+}
+
+.ba-resources__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.ba-resources__title {
+  text-align: center;
+  font-size: 52px;
+  margin-bottom: 100px;
+}
+
+.ba-yellow-text {
+  color: #fdc800;
+}
+
+.ba-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 330px;
+}
+
+.ba-card__icon {
+  max-width: 105px;
+  margin-bottom: 15px;
+}
+
+.ba-card__title {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 32px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.ba-card__description {
+  list-style: none;
+  text-align: center;
+  padding: 0;
 }
