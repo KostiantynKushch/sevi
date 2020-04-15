@@ -147,9 +147,19 @@ textarea {
 /* --- hero section --- */
 
 .ba-hero {
-  background: url(../img/hero-bg-right.png) no-repeat top right,
-    url(../img/hero-bg-left.png) no-repeat center left;
+  background: url(../img/hero-bg-right.png) no-repeat top right;
   padding: 337px 0 300px;
+  position: relative;
+}
+
+.ba-hero:after {
+  content: '';
+  background: url(../img/hero-bg-left.png) no-repeat;
+  width: 89px;
+  height: 169px;
+  position: absolute;
+  left: 0%;
+  bottom: 15%;
 }
 
 .ba-hero__inner {
@@ -225,6 +235,17 @@ textarea {
 /* --- resources --- */
 .ba-resources {
   padding: 153px 0 150px;
+  position: relative;
+}
+
+.ba-resources:after {
+  content: '';
+  background: url(../img/hero-bg-left.png) no-repeat;
+  width: 89px;
+  height: 169px;
+  position: absolute;
+  right: 0.5%;
+  top: 35%;
 }
 
 .ba-resources__row {
