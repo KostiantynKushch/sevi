@@ -151,6 +151,10 @@ textarea {
   padding-top: 59px;
 }
 
+.ba-nav__background {
+  display: none;
+}
+
 .ba-nav__list {
   display: flex;
   justify-content: space-between;
@@ -233,6 +237,7 @@ textarea {
   }
 
   .ba-nav__background {
+    display: block;
     position: absolute;
     top: 0;
     right: 0;
