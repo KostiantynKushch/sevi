@@ -26,35 +26,47 @@
 					</a>
 
 					<div class="ba-nav">
-						<div class="ba-nav__hamb">
+						<button class="ba-nav__hamb" aria-label="Open menu" title="Open menu">
 							<div class="ba-nav__line"></div>
 							<div class="ba-nav__line"></div>
 							<div class="ba-nav__line"></div>
-						</div>
+						</button>
 						<!-- /.ba-nav__hamb -->
-						<ul class="ba-nav__list">
-							<li class="ba-nav__item">
-								<a href="#" class="ba-nav__link ba-nav__link--current">Home</a>
-							</li>
-							<!-- /.ba-nav__item -->
-							<li class="ba-nav__item">
-								<a href="#" class="ba-nav__link ba-nav__link--drop">Browse</a>
-							</li>
-							<!-- /.ba-nav__item -->
-							<li class="ba-nav__item">
-								<a href="#" class="ba-nav__link ba-nav__link--drop">My books</a>
-							</li>
-							<!-- /.ba-nav__item -->
-							<li class="ba-nav__item">
-								<a href="#" class="ba-nav__link ba-nav__link--drop">More</a>
-							</li>
-							<!-- /.ba-nav__item -->
-							<li class="ba-nav__item">
-								<a href="#" class="ba-nav__link ba-nav__link--button">Login</a>
-							</li>
-							<!-- /.ba-nav__item -->
-						</ul>
-						<!-- /.ba-nav__list -->
+						<div class="ba-nav__wrap">
+
+							<svg class="ba-nav__background" width="680" height="896" viewBox="0 0 680 896"
+								preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+								<path class="ba-nav__path"
+									d="M0.500006 0H679.5V896H0.500006C0.500006 896 189 783 189 683.5C189 584 52.5 587 52.5 465.5C52.5 344 189 248.5 189 159.5C189 70.5 0.500006 0 0.500006 0Z"
+									fill="#C4C4C4" />
+							</svg>
+
+
+							<ul class="ba-nav__list">
+								<li class="ba-nav__item">
+									<a href="#" class="ba-nav__link ba-nav__link--current">Home</a>
+								</li>
+								<!-- /.ba-nav__item -->
+								<li class="ba-nav__item">
+									<a href="#" class="ba-nav__link ba-nav__link--drop">Browse</a>
+								</li>
+								<!-- /.ba-nav__item -->
+								<li class="ba-nav__item">
+									<a href="#" class="ba-nav__link ba-nav__link--drop">My books</a>
+								</li>
+								<!-- /.ba-nav__item -->
+								<li class="ba-nav__item">
+									<a href="#" class="ba-nav__link ba-nav__link--drop">More</a>
+								</li>
+								<!-- /.ba-nav__item -->
+								<li class="ba-nav__item">
+									<a href="#" class="ba-nav__link ba-nav__link--button">Login</a>
+								</li>
+								<!-- /.ba-nav__item -->
+							</ul>
+							<!-- /.ba-nav__list -->
+						</div>
+						<!-- /.ba-nav__wrap -->
 					</div>
 					<!-- /.ba-nav -->
 				</div>
@@ -203,6 +215,7 @@
 	</main>
 	<!--/ main -->
 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
 	<script src="./app.js"></script>
 </body>
 
