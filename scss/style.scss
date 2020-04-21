@@ -597,3 +597,227 @@ textarea {
     color: #723182;
   }
 }
+
+// ba-books
+
+.ba-books {
+  padding-top: 100px;
+  &__title {
+    text-align: center;
+    margin: 0 0 50px;
+  }
+  &__wrap {
+  }
+  &__accordion {
+    padding-left: 0px;
+    margin-bottom: 30px;
+    list-style: none;
+    counter-reset: ba-counter;
+  }
+  &__footer {
+    display: flex;
+    justify-content: center;
+  }
+  &__cta {
+  }
+}
+
+.ba-book {
+  padding: 30px;
+  counter-increment: ba-counter;
+  cursor: pointer;
+
+  & + & {
+    margin-top: 20px;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width: 1024px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  &__header-wrap {
+    text-align: center;
+    @media screen and (min-width: 1024px) {
+      display: flex;
+      justify-content: space-between;
+      min-width: 50%;
+    }
+  }
+  &__title {
+    position: relative;
+    font-size: 20px;
+    color: #091e40;
+    margin: 0 0 10px;
+    &:before {
+      content: counter(ba-counter) '. ';
+      font-family: 'Nunito Sans';
+      font-size: 20px;
+      font-weight: 700;
+      color: #091e40;
+      position: absolute;
+      top: 2px;
+      left: -25px;
+    }
+  }
+  &__rate {
+    padding: 0 10px;
+    margin-bottom: 10px;
+  }
+  &__star {
+    width: 24px;
+    height: 24px;
+  }
+  &__price {
+    font-size: 20px;
+    font-weight: 900;
+    color: #091e40;
+    margin: 0;
+  }
+  &__author {
+    text-align: center;
+    opacity: 0.6;
+    color: #091e40;
+    font-size: 18px;
+    @media screen and (min-width: 1024px) {
+      text-align: left;
+    }
+  }
+  &__body {
+    text-align: center;
+
+    .ba-book__author {
+      font-size: 32px;
+      font-weight: 600;
+      opacity: 1;
+    }
+    @media screen and (min-width: 1024px) {
+      display: flex;
+      padding: 0 20px;
+    }
+  }
+  &__img {
+    max-width: 200px;
+    margin-bottom: 30px;
+    @media screen and (min-width: 1024px) {
+      max-width: 215px;
+    }
+  }
+  &__content {
+    @media screen and (min-width: 1024px) {
+      padding: 30px 10%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+  &__info {
+    @media screen and (min-width: 1024px) {
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__delimiter {
+    @media screen and (min-width: 1024px) {
+      background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAf0lEQVQoU4WPMQ6CUBBE3/ApDA0WkFB6BDwJV5GT6FH0JHIE7Cixs4C/ZokFMUS3m7xJZp8Aql11mJLpLFR7NqxLY9oOr6GXwzmZ78De4erGEMNRRVZchZovuETDbiqzcgTyrQLQ/ywY9vg/8Xmy25h5hhhqrTQvwKIJuObJNd8akiyiZa6X1wAAAABJRU5ErkJggg==)
+        no-repeat center;
+      width: 8px;
+      height: 8px;
+    }
+  }
+  &__statistic {
+    margin-bottom: 30px;
+  }
+  &__exerpt {
+  }
+  &__text {
+    text-align: justify;
+  }
+  &__cta {
+    color: #fdc800;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__e-shop {
+    width: 150px;
+    @media screen and (min-width: 1024px) {
+      width: 188px;
+    }
+  }
+
+  .ba-book__body {
+    display: none;
+  }
+  &--full {
+    box-shadow: 0 40px 70px rgba(197, 197, 197, 0.3);
+    background-color: #ffffff;
+    .ba-book__body {
+      display: block;
+      @media screen and (min-width: 1024px) {
+        display: flex;
+      }
+    }
+
+    .ba-book__header {
+      margin-bottom: 20px;
+    }
+
+    .ba-book__header-wrap {
+      @media screen and (min-width: 1024px) {
+        width: 60%;
+      }
+    }
+
+    .ba-book__title {
+      font-size: 22px;
+      padding-left: 20px;
+      margin-bottom: 20px;
+      &:before {
+        font-size: 22px;
+        top: 1.5px;
+        left: -10px;
+      }
+    }
+    .ba-book__rate {
+      margin-bottom: 20px;
+    }
+    .ba-book__star {
+      width: 34px;
+      height: 34px;
+    }
+    .ba-book__price {
+      font-size: 22px;
+      margin-bottom: 30px;
+    }
+
+    .ba-book__author,
+    .ba-book__statistic {
+      margin: 0 0 10px;
+      font-size: 16px;
+      color: #091e40;
+      @media screen and (min-width: 1024px) {
+        margin: 0;
+      }
+    }
+    .ba-book__author {
+      @media screen and (min-width: 1024px) {
+        padding: 0 20px 0 0;
+      }
+
+      &--top {
+        display: none;
+      }
+    }
+    .ba-book__statistic {
+      @media screen and (min-width: 1024px) {
+        padding: 0 0 0 20px;
+      }
+    }
+  }
+}

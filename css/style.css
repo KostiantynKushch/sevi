@@ -1,13 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@600&family=Nunito+Sans:wght@400;600;700;800&family=Playfair+Display:wght@700&display=swap');
-*,
-*:after,
-*:before {
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@600&family=Nunito+Sans:wght@400;600;700;800&family=Playfair+Display:wght@700&display=swap");
+*, *:after, *:before {
   box-sizing: border-box;
 }
 
-.cf:before,
-.cf:after {
-  content: ' ';
+.cf:before, .cf:after {
+  content: " ";
   display: table;
 }
 
@@ -15,8 +12,7 @@
   clear: both;
 }
 
-.ba-container,
-.ba-container-center {
+.ba-container, .ba-container-center {
   margin-left: auto;
   margin-right: auto;
 }
@@ -30,8 +26,7 @@ html {
   height: 100%;
 }
 
-body,
-html {
+body, html {
   min-height: 100%;
 }
 
@@ -79,7 +74,7 @@ html {
   margin-top: 30px;
 }
 
-.ba-row > [class*='ba-col-'] {
+.ba-row > [class*=ba-col-] {
   padding-left: 30px;
 }
 
@@ -91,7 +86,7 @@ html {
   margin-top: 0;
 }
 
-.ba-row--collapse > [class*='ba-col-'] {
+.ba-row--collapse > [class*=ba-col-] {
   padding-left: 0;
 }
 
@@ -408,9 +403,9 @@ select {
  *    `input` and others.
  */
 button,
-html input[type='button'],
-input[type='reset'],
-input[type='submit'] {
+html input[type=button],
+input[type=reset],
+input[type=submit] {
   -webkit-appearance: button;
   /* 2 */
   cursor: pointer;
@@ -449,8 +444,8 @@ input {
  * 1. Address box sizing set to `content-box` in IE 8/9/10.
  * 2. Remove excess padding in IE 8/9/10.
  */
-input[type='checkbox'],
-input[type='radio'] {
+input[type=checkbox],
+input[type=radio] {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -462,8 +457,8 @@ input[type='radio'] {
  * `font-size` values of the `input`, it causes the cursor style of the
  * decrement button to change from `default` to `text`.
  */
-input[type='number']::-webkit-inner-spin-button,
-input[type='number']::-webkit-outer-spin-button {
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -471,7 +466,7 @@ input[type='number']::-webkit-outer-spin-button {
  * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
  * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
  */
-input[type='search'] {
+input[type=search] {
   -webkit-appearance: textfield;
   /* 1 */
   box-sizing: content-box;
@@ -483,8 +478,8 @@ input[type='search'] {
  * Safari (but not Chrome) clips the cancel button when the search input has
  * padding (and `textfield` appearance).
  */
-input[type='search']::-webkit-search-cancel-button,
-input[type='search']::-webkit-search-decoration {
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -539,7 +534,7 @@ th {
 }
 
 body {
-  font: 400 16px/1 'Nunito Sans', sans-serif;
+  font: 400 16px/1 "Nunito Sans", sans-serif;
   color: #777c86;
 }
 
@@ -549,7 +544,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   color: #44224b;
   font-weight: 700;
   margin: 0 0 30px;
@@ -578,11 +573,11 @@ h4 {
   }
 
   h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0 0 46px;
   }
 
@@ -616,40 +611,38 @@ h4 {
 
 /* Typography */
 a,
-input[type='submit'],
-input[type='button'],
+input[type=submit],
+input[type=button],
 button {
-  transition: color 0.3s ease-in, border-color 0.3s ease-in,
-    background-color 0.3s ease-in, opacity 0.3s ease-in;
+  transition: color 0.3s ease-in, border-color 0.3s ease-in, background-color 0.3s ease-in, opacity 0.3s ease-in;
   outline: none;
 }
 
-input[type='submit'],
-input[type='button'],
+input[type=submit],
+input[type=button],
 button,
 .ba-button {
   display: inline-block;
 }
 
-input[type='text'],
-input[type='email'],
-input[type='password'],
-input[type='number'],
-input[type='tel'],
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=number],
+input[type=tel],
 textarea,
 select {
-  transition: color 0.3s ease-in, border-color 0.3s ease-in,
-    background-color 0.3s ease-in, opacity 0.3s ease-in;
+  transition: color 0.3s ease-in, border-color 0.3s ease-in, background-color 0.3s ease-in, opacity 0.3s ease-in;
   border-radius: 39px;
   background-color: #f1eaf2;
   border: 1px solid #f1eaf2;
 }
 
-input[type='text']:focus,
-input[type='email']:focus,
-input[type='password']:focus,
-input[type='number']:focus,
-input[type='tel']:focus,
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=password]:focus,
+input[type=number]:focus,
+input[type=tel]:focus,
 textarea:focus,
 select:focus {
   border-color: #723182;
@@ -696,15 +689,14 @@ select:focus {
   opacity: 0.6;
   text-decoration: none;
 }
-.ba-nav__link--current,
-.ba-nav__link:hover {
+.ba-nav__link--current, .ba-nav__link:hover {
   opacity: 1;
 }
 .ba-nav__link--drop {
   position: relative;
 }
 .ba-nav__link--drop:after {
-  content: '';
+  content: "";
   width: 11px;
   height: 6px;
   background-image: url(../img/arrow-down.png);
@@ -727,9 +719,6 @@ select:focus {
 }
 
 @media screen and (max-width: 1023px) {
-  .ba-header {
-    padding-top: 36px;
-  }
   .ba-hidden {
     overflow: hidden;
   }
@@ -878,7 +867,7 @@ select:focus {
   }
 }
 .ba-hero:after {
-  content: '';
+  content: "";
   background: url(../img/hero-bg-left.png) no-repeat;
   width: 89px;
   height: 169px;
@@ -1013,7 +1002,7 @@ select:focus {
   }
 }
 .ba-resources:after {
-  content: '';
+  content: "";
   background: url(../img/hero-bg-left.png) no-repeat;
   width: 89px;
   height: 169px;
@@ -1049,7 +1038,7 @@ select:focus {
 .ba-card__title {
   margin-bottom: 0;
   letter-spacing: -1.1px;
-  font-family: 'Nunito Sans';
+  font-family: "Nunito Sans";
 }
 @media screen and (min-width: 1440px) {
   .ba-card__title {
@@ -1156,5 +1145,227 @@ select:focus {
 .ba-button:hover {
   background-color: transparent;
   color: #723182;
+}
+
+.ba-books {
+  padding-top: 100px;
+}
+.ba-books__title {
+  text-align: center;
+  margin: 0 0 50px;
+}
+.ba-books__accordion {
+  padding-left: 0px;
+  margin-bottom: 30px;
+  list-style: none;
+  counter-reset: ba-counter;
+}
+.ba-books__footer {
+  display: flex;
+  justify-content: center;
+}
+.ba-book {
+  padding: 30px;
+  counter-increment: ba-counter;
+  cursor: pointer;
+}
+.ba-book + .ba-book {
+  margin-top: 20px;
+}
+.ba-book__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 1024px) {
+  .ba-book__header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.ba-book__header-wrap {
+  text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  .ba-book__header-wrap {
+    display: flex;
+    justify-content: space-between;
+    min-width: 50%;
+  }
+}
+.ba-book__title {
+  position: relative;
+  font-size: 20px;
+  color: #091e40;
+  margin: 0 0 10px;
+}
+.ba-book__title:before {
+  content: counter(ba-counter) ". ";
+  font-family: "Nunito Sans";
+  font-size: 20px;
+  font-weight: 700;
+  color: #091e40;
+  position: absolute;
+  top: 2px;
+  left: -25px;
+}
+.ba-book__rate {
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+.ba-book__star {
+  width: 24px;
+  height: 24px;
+}
+.ba-book__price {
+  font-size: 20px;
+  font-weight: 900;
+  color: #091e40;
+  margin: 0;
+}
+.ba-book__author {
+  text-align: center;
+  opacity: 0.6;
+  color: #091e40;
+  font-size: 18px;
+}
+@media screen and (min-width: 1024px) {
+  .ba-book__author {
+    text-align: left;
+  }
+}
+.ba-book__body {
+  text-align: center;
+}
+.ba-book__body .ba-book__author {
+  font-size: 32px;
+  font-weight: 600;
+  opacity: 1;
+}
+@media screen and (min-width: 1024px) {
+  .ba-book__body {
+    display: flex;
+    padding: 0 20px;
+  }
+}
+.ba-book__img {
+  max-width: 200px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1024px) {
+  .ba-book__img {
+    max-width: 215px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .ba-book__content {
+    padding: 30px 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .ba-book__info {
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .ba-book__delimiter {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAf0lEQVQoU4WPMQ6CUBBE3/ApDA0WkFB6BDwJV5GT6FH0JHIE7Cixs4C/ZokFMUS3m7xJZp8Aql11mJLpLFR7NqxLY9oOr6GXwzmZ78De4erGEMNRRVZchZovuETDbiqzcgTyrQLQ/ywY9vg/8Xmy25h5hhhqrTQvwKIJuObJNd8akiyiZa6X1wAAAABJRU5ErkJggg==) no-repeat center;
+    width: 8px;
+    height: 8px;
+  }
+}
+.ba-book__statistic {
+  margin-bottom: 30px;
+}
+.ba-book__text {
+  text-align: justify;
+}
+.ba-book__cta {
+  color: #fdc800;
+  text-decoration: none;
+}
+.ba-book__cta:hover {
+  text-decoration: underline;
+}
+.ba-book__e-shop {
+  width: 150px;
+}
+@media screen and (min-width: 1024px) {
+  .ba-book__e-shop {
+    width: 188px;
+  }
+}
+.ba-book .ba-book__body {
+  display: none;
+}
+.ba-book--full {
+  box-shadow: 0 40px 70px rgba(197, 197, 197, 0.3);
+  background-color: #ffffff;
+}
+.ba-book--full .ba-book__body {
+  display: block;
+}
+@media screen and (min-width: 1024px) {
+  .ba-book--full .ba-book__body {
+    display: flex;
+  }
+}
+.ba-book--full .ba-book__header {
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .ba-book--full .ba-book__header-wrap {
+    width: 60%;
+  }
+}
+.ba-book--full .ba-book__title {
+  font-size: 22px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+.ba-book--full .ba-book__title:before {
+  font-size: 22px;
+  top: 1.5px;
+  left: -10px;
+}
+.ba-book--full .ba-book__rate {
+  margin-bottom: 20px;
+}
+.ba-book--full .ba-book__star {
+  width: 34px;
+  height: 34px;
+}
+.ba-book--full .ba-book__price {
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+.ba-book--full .ba-book__author,
+.ba-book--full .ba-book__statistic {
+  margin: 0 0 10px;
+  font-size: 16px;
+  color: #091e40;
+}
+@media screen and (min-width: 1024px) {
+  .ba-book--full .ba-book__author,
+.ba-book--full .ba-book__statistic {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .ba-book--full .ba-book__author {
+    padding: 0 20px 0 0;
+  }
+}
+.ba-book--full .ba-book__author--top {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .ba-book--full .ba-book__statistic {
+    padding: 0 0 0 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

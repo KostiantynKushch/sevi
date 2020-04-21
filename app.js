@@ -16,6 +16,9 @@ const ba_fin_path = 'M0.500006 0H679.5V896H0.500006C0.500006 896 0.499999 808 0.
 // nav toggle
 let toggle = false;
 
+// books - accordion
+const ba_books = document.querySelectorAll('.ba-book');
+
 
 
 // hero search
@@ -69,7 +72,7 @@ ba_hamb.addEventListener('click', () => {
 		.add({
 			targets: ".ba-nav__wrap",
 			backgroundColor: toggle ? '#733283f2' : '#FFF3DC'
-		}, '-=500');
+		}, '-=400');
 
 	if (!toggle) {
 		toggle = true;
@@ -77,4 +80,13 @@ ba_hamb.addEventListener('click', () => {
 		toggle = false;
 	}
 
+});
+
+
+// books accordion
+ba_books.forEach(book => {
+	console.log(book);
+	book.addEventListener('click', () => {
+		book.classList.toggle('ba-book--full');
+	});
 });
