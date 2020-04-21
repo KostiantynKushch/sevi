@@ -1,10 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@600&family=Nunito+Sans:wght@400;600;700;800&family=Playfair+Display:wght@700&display=swap");
-*, *:after, *:before {
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@600&family=Nunito+Sans:wght@400;600;700;800&family=Playfair+Display:wght@700&display=swap');
+*,
+*:after,
+*:before {
   box-sizing: border-box;
 }
 
-.cf:before, .cf:after {
-  content: " ";
+.cf:before,
+.cf:after {
+  content: ' ';
   display: table;
 }
 
@@ -12,7 +15,8 @@
   clear: both;
 }
 
-.ba-container, .ba-container-center {
+.ba-container,
+.ba-container-center {
   margin-left: auto;
   margin-right: auto;
 }
@@ -26,7 +30,8 @@ html {
   height: 100%;
 }
 
-body, html {
+body,
+html {
   min-height: 100%;
 }
 
@@ -74,7 +79,7 @@ body, html {
   margin-top: 30px;
 }
 
-.ba-row > [class*=ba-col-] {
+.ba-row > [class*='ba-col-'] {
   padding-left: 30px;
 }
 
@@ -86,7 +91,7 @@ body, html {
   margin-top: 0;
 }
 
-.ba-row--collapse > [class*=ba-col-] {
+.ba-row--collapse > [class*='ba-col-'] {
   padding-left: 0;
 }
 
@@ -403,9 +408,9 @@ select {
  *    `input` and others.
  */
 button,
-html input[type=button],
-input[type=reset],
-input[type=submit] {
+html input[type='button'],
+input[type='reset'],
+input[type='submit'] {
   -webkit-appearance: button;
   /* 2 */
   cursor: pointer;
@@ -444,8 +449,8 @@ input {
  * 1. Address box sizing set to `content-box` in IE 8/9/10.
  * 2. Remove excess padding in IE 8/9/10.
  */
-input[type=checkbox],
-input[type=radio] {
+input[type='checkbox'],
+input[type='radio'] {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -457,8 +462,8 @@ input[type=radio] {
  * `font-size` values of the `input`, it causes the cursor style of the
  * decrement button to change from `default` to `text`.
  */
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -466,7 +471,7 @@ input[type=number]::-webkit-outer-spin-button {
  * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
  * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
  */
-input[type=search] {
+input[type='search'] {
   -webkit-appearance: textfield;
   /* 1 */
   box-sizing: content-box;
@@ -478,8 +483,8 @@ input[type=search] {
  * Safari (but not Chrome) clips the cancel button when the search input has
  * padding (and `textfield` appearance).
  */
-input[type=search]::-webkit-search-cancel-button,
-input[type=search]::-webkit-search-decoration {
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -534,7 +539,7 @@ th {
 }
 
 body {
-  font: 400 16px/1 "Nunito Sans", sans-serif;
+  font: 400 16px/1 'Nunito Sans', sans-serif;
   color: #777c86;
 }
 
@@ -544,7 +549,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   color: #44224b;
   font-weight: 700;
   margin: 0 0 30px;
@@ -573,11 +578,11 @@ h4 {
   }
 
   h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     margin: 0 0 46px;
   }
 
@@ -611,38 +616,40 @@ h6 {
 
 /* Typography */
 a,
-input[type=submit],
-input[type=button],
+input[type='submit'],
+input[type='button'],
 button {
-  transition: color 0.3s ease-in, border-color 0.3s ease-in, background-color 0.3s ease-in, opacity 0.3s ease-in;
+  transition: color 0.3s ease-in, border-color 0.3s ease-in,
+    background-color 0.3s ease-in, opacity 0.3s ease-in;
   outline: none;
 }
 
-input[type=submit],
-input[type=button],
+input[type='submit'],
+input[type='button'],
 button,
 .ba-button {
   display: inline-block;
 }
 
-input[type=text],
-input[type=email],
-input[type=password],
-input[type=number],
-input[type=tel],
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='number'],
+input[type='tel'],
 textarea,
 select {
-  transition: color 0.3s ease-in, border-color 0.3s ease-in, background-color 0.3s ease-in, opacity 0.3s ease-in;
+  transition: color 0.3s ease-in, border-color 0.3s ease-in,
+    background-color 0.3s ease-in, opacity 0.3s ease-in;
   border-radius: 39px;
   background-color: #f1eaf2;
   border: 1px solid #f1eaf2;
 }
 
-input[type=text]:focus,
-input[type=email]:focus,
-input[type=password]:focus,
-input[type=number]:focus,
-input[type=tel]:focus,
+input[type='text']:focus,
+input[type='email']:focus,
+input[type='password']:focus,
+input[type='number']:focus,
+input[type='tel']:focus,
 textarea:focus,
 select:focus {
   border-color: #723182;
@@ -689,14 +696,15 @@ select:focus {
   opacity: 0.6;
   text-decoration: none;
 }
-.ba-nav__link--current, .ba-nav__link:hover {
+.ba-nav__link--current,
+.ba-nav__link:hover {
   opacity: 1;
 }
 .ba-nav__link--drop {
   position: relative;
 }
 .ba-nav__link--drop:after {
-  content: "";
+  content: '';
   width: 11px;
   height: 6px;
   background-image: url(../img/arrow-down.png);
@@ -719,6 +727,9 @@ select:focus {
 }
 
 @media screen and (max-width: 1023px) {
+  .ba-header {
+    padding-top: 36px;
+  }
   .ba-hidden {
     overflow: hidden;
   }
@@ -867,7 +878,7 @@ select:focus {
   }
 }
 .ba-hero:after {
-  content: "";
+  content: '';
   background: url(../img/hero-bg-left.png) no-repeat;
   width: 89px;
   height: 169px;
@@ -1002,7 +1013,7 @@ select:focus {
   }
 }
 .ba-resources:after {
-  content: "";
+  content: '';
   background: url(../img/hero-bg-left.png) no-repeat;
   width: 89px;
   height: 169px;
@@ -1038,7 +1049,7 @@ select:focus {
 .ba-card__title {
   margin-bottom: 0;
   letter-spacing: -1.1px;
-  font-family: "Nunito Sans";
+  font-family: 'Nunito Sans';
 }
 @media screen and (min-width: 1440px) {
   .ba-card__title {
