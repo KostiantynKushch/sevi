@@ -1,0 +1,343 @@
+// ba-books
+
+.ba-books {
+  @media screen and (min-width: 640px) {
+    padding-top: 100px;
+  }
+  @media screen and (min-width: 1440px) {
+    padding-top: 275px;
+  }
+
+  &__title {
+    text-align: center;
+    margin: 0 0 50px;
+    letter-spacing: 1.1px;
+    @media screen and (min-width: 1440px) {
+      margin-bottom: 100px;
+    }
+  }
+  &__wrap {
+  }
+  &__accordion {
+    padding-left: 0px;
+    margin-bottom: 30px;
+    list-style: none;
+    counter-reset: ba-counter;
+    @media screen and (min-width: 1440px) {
+      margin-bottom: 140px;
+    }
+  }
+  &__footer {
+    display: flex;
+    justify-content: center;
+  }
+  &__cta {
+  }
+}
+
+.ba-book {
+  padding: 30px;
+  counter-increment: ba-counter;
+  cursor: pointer;
+  box-shadow: 0 0 0 rgba(197, 197, 197, 0.3);
+  transition: box-shadow 0.3s;
+  @media screen and (min-width: 1440px) {
+    padding: 30px 74px 30px 67px;
+  }
+  &:hover {
+    box-shadow: 0 40px 70px rgba(197, 197, 197, 0.3);
+  }
+
+  & + & {
+    margin-top: 20px;
+    @media screen and (min-width: 1440px) {
+      margin-top: 30px;
+    }
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width: 1024px) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+  }
+  &__header-wrap {
+    text-align: center;
+    @media screen and (min-width: 1024px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-width: 50%;
+    }
+  }
+  &__title {
+    position: relative;
+    font-family: 'Nunito Sans';
+    font-size: 20px;
+    color: #091e40;
+    margin: 0 0 10px;
+    @media screen and (min-width: 1024px) {
+      margin-bottom: 0;
+    }
+    @media screen and (min-width: 1440px) {
+      font-size: 36px;
+      font-weight: 700;
+      letter-spacing: -1.2px;
+      padding-left: 46px;
+    }
+    &:before {
+      content: counter(ba-counter) '. ';
+      font-family: 'Nunito Sans';
+      font-size: 20px;
+      font-weight: 700;
+      color: #091e40;
+      position: absolute;
+      top: 2px;
+      left: -25px;
+      @media screen and (min-width: 1440px) {
+        font-size: 36px;
+        font-weight: 700;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+  &__rate {
+    padding: 0 10px;
+    margin-bottom: 10px;
+    @media screen and (min-width: 1024px) {
+      margin-bottom: 0;
+    }
+    @media screen and (min-width: 1440px) {
+      padding-left: 78px;
+    }
+  }
+  &__star {
+    width: 24px;
+    height: 24px;
+    @media screen and (min-width: 1440px) {
+      width: 37px;
+      height: 37px;
+      margin-left: 10px;
+    }
+  }
+  &__price {
+    font-size: 20px;
+    font-weight: 900;
+    color: #091e40;
+    margin: 0;
+    letter-spacing: -1.3px;
+    @media screen and (min-width: 1440px) {
+      font-size: 40px;
+    }
+  }
+  &__author {
+    text-align: center;
+    opacity: 0.6;
+    color: #091e40;
+    font-size: 18px;
+    letter-spacing: -1px;
+    @media screen and (min-width: 1024px) {
+      text-align: left;
+      margin: 0;
+    }
+    @media screen and (min-width: 1440px) {
+      font-size: 30px;
+      padding-left: 45px;
+    }
+  }
+  &__body {
+    text-align: center;
+
+    .ba-book__author {
+      font-size: 32px;
+      font-weight: 600;
+      opacity: 1;
+    }
+    @media screen and (min-width: 1024px) {
+      display: flex;
+      padding: 0 20px;
+    }
+  }
+  &__img {
+    max-width: 200px;
+    margin-bottom: 30px;
+    @media screen and (min-width: 1024px) {
+      max-width: 215px;
+    }
+  }
+  &__content {
+    @media screen and (min-width: 1024px) {
+      padding: 30px 10%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    @media screen and (min-width: 1440px) {
+      padding: 20px 65px;
+    }
+  }
+  &__info {
+    @media screen and (min-width: 1024px) {
+      display: flex;
+      align-items: center;
+    }
+    @media screen and (min-width: 1440px) {
+      margin-bottom: 30px;
+    }
+  }
+  &__delimiter {
+    @media screen and (min-width: 1024px) {
+      background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAf0lEQVQoU4WPMQ6CUBBE3/ApDA0WkFB6BDwJV5GT6FH0JHIE7Cixs4C/ZokFMUS3m7xJZp8Aql11mJLpLFR7NqxLY9oOr6GXwzmZ78De4erGEMNRRVZchZovuETDbiqzcgTyrQLQ/ywY9vg/8Xmy25h5hhhqrTQvwKIJuObJNd8akiyiZa6X1wAAAABJRU5ErkJggg==)
+        no-repeat center;
+      width: 8px;
+      height: 8px;
+    }
+  }
+  &__statistic {
+    margin-bottom: 30px;
+  }
+  &__exerpt {
+  }
+  &__text {
+    text-align: justify;
+    @media screen and (min-width: 1440px) {
+      text-align: left;
+      line-height: 1.7;
+      letter-spacing: -0.9px;
+      margin-top: 0;
+      margin-bottom: 55px;
+      font-size: 27px;
+    }
+  }
+  &__cta {
+    color: #fdc800;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__e-shop {
+    width: 150px;
+    @media screen and (min-width: 1024px) {
+      width: 188px;
+    }
+  }
+
+  .ba-book__body {
+    display: none;
+  }
+  &--full {
+    box-shadow: 0 40px 70px rgba(197, 197, 197, 0.3);
+    background-color: #ffffff;
+    @media screen and (min-width: 1440px) {
+      padding: 70px 45px 50px 67px;
+    }
+    .ba-book__body {
+      display: block;
+      @media screen and (min-width: 1024px) {
+        display: flex;
+      }
+      @media screen and (min-width: 1440px) {
+        padding-left: 66px;
+      }
+    }
+
+    .ba-book__header {
+      margin-bottom: 20px;
+      @media screen and (min-width: 1440px) {
+        margin-bottom: 32px;
+        padding-right: 35px;
+      }
+    }
+
+    .ba-book__header-wrap {
+      @media screen and (min-width: 1024px) {
+        width: 60%;
+      }
+      @media screen and (min-width: 1440px) {
+        width: 75%;
+      }
+    }
+
+    .ba-book__title {
+      font-size: 22px;
+      padding-left: 20px;
+      margin-bottom: 20px;
+      @media screen and (min-width: 1440px) {
+        font-size: 46px;
+        padding-left: 60px;
+        letter-spacing: -1.5px;
+      }
+      &:before {
+        font-size: 22px;
+        top: 1.5px;
+        left: -10px;
+        @media screen and (min-width: 1440px) {
+          font-size: 46px;
+          top: 0;
+          left: 0;
+        }
+      }
+    }
+    .ba-book__rate {
+      margin-bottom: 20px;
+      @media screen and (min-width: 1440px) {
+        padding-left: 0;
+      }
+    }
+    .ba-book__star {
+      width: 34px;
+      height: 34px;
+      @media screen and (min-width: 1440px) {
+        width: 45px;
+        height: 45px;
+        margin-left: 15px;
+      }
+    }
+    .ba-book__price {
+      font-size: 22px;
+      margin-bottom: 30px;
+      @media screen and (min-width: 1440px) {
+        font-size: 48px;
+        letter-spacing: -1.3px;
+      }
+    }
+
+    .ba-book__author,
+    .ba-book__statistic {
+      margin: 0 0 10px;
+      font-size: 16px;
+      color: #091e40;
+      letter-spacing: -1px;
+      @media screen and (min-width: 1024px) {
+        margin: 0;
+      }
+      @media screen and (min-width: 1440px) {
+        font-size: 32px;
+      }
+    }
+    .ba-book__author {
+      @media screen and (min-width: 1024px) {
+        padding: 0 20px 0 0;
+      }
+      @media screen and (min-width: 1440px) {
+        padding: 0 22px 0 6px;
+      }
+
+      &--top {
+        display: none;
+      }
+    }
+    .ba-book__statistic {
+      @media screen and (min-width: 1024px) {
+        padding: 0 0 0 20px;
+      }
+    }
+  }
+}
