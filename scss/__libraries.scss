@@ -1,13 +1,24 @@
 // ba-libraries
 
 .ba-libraries {
-  background: url(../img/bg-lib.png) no-repeat top left;
-  background-size: contain;
+  position: relative;
+  padding-bottom: 60px;
   @media screen and (min-width: 640px) {
-    background-size: 50%;
+    padding-top: 60px;
   }
-  @media screen and (min-width: 1440px) {
-    padding-top: 167px;
+  &:before {
+    content: '';
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    background: url(../img/bg-lib.png) no-repeat top right;
+    background-size: contain;
+    @media screen and (min-width: 640px) {
+      top: 0;
+      background-position: left;
+      height: 100%;
+      width: 50%;
+    }
   }
   &__row {
     display: flex;
@@ -23,7 +34,7 @@
     }
   }
   &__content {
-    padding-top: 80%;
+    padding-top: 100%;
     @media screen and (min-width: 640px) {
       padding: 0 30px;
     }

@@ -1059,17 +1059,28 @@ select:focus {
   letter-spacing: -0.9px;
 }
 .ba-libraries {
-  background: url(../img/bg-lib.png) no-repeat top left;
-  background-size: contain;
+  position: relative;
+  padding-bottom: 60px;
 }
 @media screen and (min-width: 640px) {
   .ba-libraries {
-    background-size: 50%;
+    padding-top: 60px;
   }
 }
-@media screen and (min-width: 1440px) {
-  .ba-libraries {
-    padding-top: 167px;
+.ba-libraries:before {
+  content: "";
+  position: absolute;
+  height: 50%;
+  width: 100%;
+  background: url(../img/bg-lib.png) no-repeat top right;
+  background-size: contain;
+}
+@media screen and (min-width: 640px) {
+  .ba-libraries:before {
+    top: 0;
+    background-position: left;
+    height: 100%;
+    width: 50%;
   }
 }
 .ba-libraries__row {
@@ -1088,7 +1099,7 @@ select:focus {
   }
 }
 .ba-libraries__content {
-  padding-top: 80%;
+  padding-top: 100%;
 }
 @media screen and (min-width: 640px) {
   .ba-libraries__content {
@@ -1552,9 +1563,14 @@ select:focus {
   padding-bottom: 100%;
   position: relative;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 640px) {
   .ba-mob-lib {
-    min-height: 100vh;
+    padding-bottom: 20%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .ba-mob-lib {
+    padding-top: 130px;
   }
 }
 .ba-mob-lib:after {
@@ -1569,18 +1585,9 @@ select:focus {
   .ba-mob-lib:after {
     top: 0;
     right: 0;
-    height: 100%;
+    height: 150%;
     width: 50%;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .ba-mob-lib:after {
-    height: 100vh;
-  }
-}
-@media screen and (min-width: 640px) {
-  .ba-mob-lib {
-    padding-bottom: 30px;
+    background-position: top;
   }
 }
 .ba-mob-lib__title {
@@ -1595,7 +1602,7 @@ select:focus {
     max-width: 330px;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
   .ba-mob-lib__title {
     max-width: 590px;
     margin-bottom: 60px;
@@ -1611,7 +1618,7 @@ select:focus {
     max-width: 380px;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
   .ba-mob-lib__intro {
     max-width: 540px;
     margin-bottom: 90px;
@@ -1640,7 +1647,7 @@ select:focus {
   width: 120px;
   height: 42px;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
   .ba-google-play__icon,
 .ba-app-store__icon {
     width: 218px;
