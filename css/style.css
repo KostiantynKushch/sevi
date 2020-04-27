@@ -1580,6 +1580,7 @@ select:focus {
   width: 100%;
   background: url(../img/bg-mob-lib.png) no-repeat bottom right;
   background-size: contain;
+  z-index: -1;
 }
 @media screen and (min-width: 640px) {
   .ba-mob-lib:after {
